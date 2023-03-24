@@ -1,0 +1,30 @@
+.container {
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+}
+
+.container {
+    vertical-align: baseline;
+}
+
+@media (min-width: 850px) {
+    .container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+    }
+
+    .container {
+        justify-content: space-between;
+    }
+}
+
+@media (min-width: 1025px) {
+    .container {
+        padding: 4.5rem;
+    }
+}

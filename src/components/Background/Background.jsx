@@ -20,7 +20,7 @@ function MyRotatingBox() {
   return (
     <gridHelper
       ref={myMesh}
-      args={[17, 10]}
+      args={[17, 13]}
       color={linesColor}
       rotation={[Math.PI / 2, 0, 0]}
     />
@@ -29,7 +29,7 @@ function MyRotatingBox() {
 
 function Background() {
   return (
-    <div className={backgroundStyles.background}>
+    <div className={`container ${backgroundStyles.container}`}>
       <Canvas>
         <ambientLight intensity={0.1} />
         <directionalLight color="red" position={[0, 0, 5]} />
