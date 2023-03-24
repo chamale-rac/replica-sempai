@@ -28,5 +28,11 @@ module.exports = {
         bundledDependencies: true,
       },
     ],
+    'react/no-unknown-property': [
+      'error',
+      {
+        ignore: ['intensity', 'position', 'args', 'rotation'],
+      },
+    ],
   },
 }
