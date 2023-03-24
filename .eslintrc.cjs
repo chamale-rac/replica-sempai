@@ -16,6 +16,12 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
     semi: ['error', 'never'],
     'max-len': ['warn', { code: 120 }],
     'import/prefer-default-export': 'off',

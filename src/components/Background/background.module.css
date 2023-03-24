@@ -1,6 +1,5 @@
 .background {
-  margin: 3rem auto;
-  height: 100vh;
-  width: 100vh;
-
+    opacity: 0.5;
+    height: 100vh;
+    width: 100vw;
 }
