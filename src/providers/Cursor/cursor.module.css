@@ -1,10 +1,12 @@
 .radius {
+    z-index: 999999999;
     position: absolute;
     top: 50%;
     left: 50%;
     width: 30px;
     height: 30px;
     transform: translate(-50%, -50%) scale(1);
+    pointer-events: none;
 }
 
 .radius {

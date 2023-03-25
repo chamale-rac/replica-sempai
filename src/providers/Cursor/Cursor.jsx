@@ -49,7 +49,7 @@ function Cursor() {
   const { x, y } = mousePosition
 
   return (
-    <div>
+    <div className={cursorStyles.wrapper}>
       <div
         className={`${cursorStyles.cursor} ${cursorStyles[cursor.type]}`}
         style={{
