@@ -1,16 +1,22 @@
 import React from 'react'
 import './App.css'
-import { Background } from './components/Background/Background'
-import { Header } from './components/Header/Header'
+import Cursor from './providers/Cursor/Cursor'
+import Background from './components/Background/Background'
+import Header from './components/Header/Header'
 
-// const { useState } = React
+import { CursorContext } from './Contexts'
+
+const { useState } = React
 
 function App() {
+  const [cursor, setCursor] = useState('')
+
   return (
-    <div className="App">
+    <CursorContext.Provider value={{ cursor, setCursor }}>
       <Background />
       <Header />
-    </div>
+      <Cursor />
+    </CursorContext.Provider>
   )
 }
 

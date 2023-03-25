@@ -39,4 +39,4 @@ function Background() {
   )
 }
 
-export { Background }
+export default Background

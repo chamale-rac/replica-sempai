@@ -24,7 +24,6 @@ module.exports = {
     ],
     semi: ['error', 'never'],
     'max-len': ['warn', { code: 120 }],
-    'import/prefer-default-export': 'off',
     'import/no-extraneous-dependencies': [
       'error',
       {

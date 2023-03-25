@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/monument-extended');
+
 *,
 *::before,
 *::after {
@@ -51,3 +53,5 @@ body {
 	src: url(./assets/fonts/AlloyExtraBold.ttf) format('truetype');
 	font-weight: 800;
 }
+
+/*TODO change color on select text, also consider select and on hover at same time*/

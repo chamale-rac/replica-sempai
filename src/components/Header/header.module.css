@@ -1,5 +1,6 @@
 .container {
     color: #ffffff;
+    z-index: 3;
 }
 
 .container {

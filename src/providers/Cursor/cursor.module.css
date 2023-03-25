@@ -1,0 +1,117 @@
+.radius {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.radius {
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #1aff31;
+    border-radius: 50%;
+    transform-origin: center center;
+    transition: width ease-in-out 0.4s, height ease-in-out 0.4s;
+}
+
+.radius.pointer.first {
+    width: 42px;
+    height: 42px;
+    border-color: #ed1e79;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.radius.pointer.second {
+    width: 42px;
+    height: 42px;
+    border-color: #ed1e79;
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-top: 1px solid transparent;
+}
+
+.radius.pointer.third {
+    width: 42px;
+    height: 42px;
+    border-color: #ed1e79;
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-top: 1px solid transparent;
+}
+
+
+.first {
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+    animation: rf 6s linear infinite;
+}
+
+.second {
+    border-bottom: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-top: 1px solid transparent;
+    animation: rs 6s linear infinite;
+}
+
+.third {
+    border-right: 1px solid transparent;
+    border-left: 1px solid transparent;
+    border-top: 1px solid transparent;
+    animation: rt 6s linear infinite;
+}
+
+.cursor {
+    width: 4px;
+    height: 4px;
+    position: relative;
+    z-index: 999999999;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: background 0.5s;
+    background: #1aff31;
+    border-radius: 50%;
+    transform: rotate(64deg);
+}
+
+.cursor.pointer {
+    background: transparent;
+}
+
+@keyframes rf {
+    from {
+        transform: rotate(13deg);
+    }
+
+    to {
+        transform: rotate(373deg);
+    }
+}
+
+@keyframes rs {
+    from {
+        transform: rotate(40deg);
+    }
+
+    to {
+        transform: rotate(400deg);
+    }
+}
+
+@keyframes rt {
+    from {
+        transform: rotate(72deg);
+    }
+
+    to {
+        transform: rotate(432deg);
+    }
+}
+
+
+/*TODO Remove default↓*/
