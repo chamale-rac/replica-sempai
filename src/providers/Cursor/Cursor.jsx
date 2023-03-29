@@ -3,7 +3,7 @@ import * as cursorStyles from './cursor.module.css'
 
 import { CursorContext } from '../../Contexts'
 
-const { useEffect, useState, useContext } = React
+const { useEffect, useState, useContext, useRef } = React
 
 function Cursor() {
   const { cursor } = useContext(CursorContext)
@@ -13,7 +13,6 @@ function Cursor() {
 
   const onMouseMove = (event) => {
     const { pageX: x, pageY: y } = event
-
     const factor = (distance) => {
       const scalingFactor = 0.07
       const midPoint = 30
@@ -53,8 +52,7 @@ function Cursor() {
       <div
         className={`${cursorStyles.cursor} ${cursorStyles[cursor.type]}`}
         style={{
-          left: `${x - 2}px`,
-          top: `${y - 2}px`,
+          transform: `translate3d(${x}px,${y}px,0) translate3d(-50%,-50%,0)`,
         }}
       />
       <div
