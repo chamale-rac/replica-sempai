@@ -1,0 +1,154 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding: 4.5rem;
+}
+
+.title {
+  display: flex;
+  color: black;
+  font-family: 'Monument Extended', sans-serif;
+  font-weight: 900;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.title_main {
+  letter-spacing: 10px;
+  font-size: 3.2rem;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
+}
+
+@media (min-width: 850px) {
+  .title_main {
+    font-size: 6.4rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .title_main {
+    font-size: 8rem;
+  }
+}
+
+.title_sup {
+  position: absolute;
+  letter-spacing: 3px;
+  right: -10%;
+}
+
+@media (min-width: 850px) {
+  .tittle_sup {
+    right: -15%;
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  .title_sup {
+    right: -22%;
+    font-size: 3.6rem;
+  }
+}
+
+.sphere {
+  opacity: 0.8;
+  z-index: -1;
+  width: 24vw;
+  height: 24vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: 50%;
+  overflow: hidden;
+  perspective: 800px;
+  display: grid;
+  border: 1px whitesmoke solid;
+  background-color: black;
+}
+
+.ring {
+  grid-area: 1/1;
+  border-style: solid;
+  border-color: white;
+  border-width: 10px 0px 0px 0px;
+  border-radius: 50%;
+  animation: ring-descend 7s linear infinite;
+}
+
+.ring:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.ring:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.ring:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.ring:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.ring:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.ring:nth-child(7) {
+  animation-delay: 3s;
+}
+
+.ring:nth-child(8) {
+  animation-delay: 3.5s;
+}
+
+.ring:nth-child(9) {
+  animation-delay: 4s;
+}
+
+.ring:nth-child(10) {
+  animation-delay: 4.5s;
+}
+
+.ring:nth-child(11) {
+  animation-delay: 5s;
+}
+
+.ring:nth-child(12) {
+  animation-delay: 5.5s;
+}
+
+.ring:nth-child(13) {
+  animation-delay: 6s;
+}
+
+.ring:nth-child(14) {
+  animation-delay: 6.5s;
+}
+
+@keyframes ring-descend {
+  0% {
+    transform: rotateX(-10deg);
+  }
+
+  100% {
+    transform: rotateX(190deg);
+  }
+}

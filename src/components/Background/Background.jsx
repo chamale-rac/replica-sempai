@@ -1,13 +1,14 @@
 import React from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
 import { degToRad } from 'three/src/math/MathUtils'
+import PropTypes from 'prop-types'
 
 import * as backgroundStyles from './background.module.css'
 
 // const { useState } = React
 const { useRef } = React
 
-function MyRotatingBox() {
+function MyRotatingGrid() {
   const myMesh = useRef()
   const linesColor = '#313131'
 
@@ -27,16 +28,22 @@ function MyRotatingBox() {
   )
 }
 
-function Background() {
+function Background({ children }) {
   return (
-    <div className={`container ${backgroundStyles.container}`}>
-      <Canvas>
-        <ambientLight intensity={0.1} />
-        <directionalLight color="red" position={[0, 0, 5]} />
-        <MyRotatingBox />
-      </Canvas>
-    </div>
+    <>
+      <div className={`container ${backgroundStyles.container}`}>
+        <Canvas>
+          <ambientLight intensity={0.1} />
+          <directionalLight color="red" position={[0, 0, 5]} />
+          <MyRotatingGrid />
+        </Canvas>
+      </div>
+      {children}
+    </>
   )
+}
+Background.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
 export default Background

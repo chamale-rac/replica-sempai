@@ -3,7 +3,7 @@ import * as cursorStyles from './cursor.module.css'
 
 import { CursorContext } from '../../Contexts'
 
-const { useEffect, useState, useContext, useRef } = React
+const { useEffect, useState, useContext } = React
 
 function Cursor() {
   const { cursor } = useContext(CursorContext)
@@ -52,7 +52,8 @@ function Cursor() {
       <div
         className={`${cursorStyles.cursor} ${cursorStyles[cursor.type]}`}
         style={{
-          transform: `translate3d(${x}px,${y}px,0) translate3d(-50%,-50%,0)`,
+          left: `${deviation(x) + 13}px`,
+          top: `${deviation(y) + 13}px`,
         }}
       />
       <div
