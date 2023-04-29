@@ -7,6 +7,7 @@
 }
 
 .title {
+  z-index: 1;
   display: flex;
   color: black;
   font-family: 'Monument Extended', sans-serif;
@@ -65,10 +66,9 @@
 }
 
 .sphere {
-  opacity: 0.8;
-  z-index: -1;
-  width: 24vw;
-  height: 24vw;
+  opacity: 1;
+  width: 23vw;
+  height: 23vw;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -79,7 +79,9 @@
   perspective: 800px;
   display: grid;
   border: 1px whitesmoke solid;
-  background-color: black;
+  /*TODO define it black background looks good...*/
+  background-image: linear-gradient(black 0 0);
+  background-blend-mode: multiply;
 }
 
 .ring {
@@ -151,4 +153,45 @@
   100% {
     transform: rotateX(190deg);
   }
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-end;
+  color: #fff;
+  vertical-align: baseline;
+}
+
+.dwl {
+  height: fit-content;
+  position: relative;
+  display: block;
+  color: #fff;
+}
+
+.kanji {
+  position: absolute;
+  top: -1rem;
+  left: -1rem;
+  color: #ed1e79;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.phrase {
+  display: flex;
+  font-family: 'Monument Extended', sans-serif;
+  font-size: 1.6rem;
+  color: #fff;
+  line-height: 0.9;
+}
+
+.phrase_sup {
+  margin-top: 0.54rem;
+  margin-left: -1.3rem;
+  font-family: 'Monument Extended', sans-serif;
+  font-size: 0.65rem;
 }
