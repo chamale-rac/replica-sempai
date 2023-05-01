@@ -25,16 +25,9 @@ Other technologies I use where:
 
 ## Images 
 ![image](https://user-images.githubusercontent.com/63200593/235411655-f91ac887-fbdb-440e-b429-98338efac5af.png)
-<footer>This is the image footer caption</footer> 
+* Image of the replicated project. I definitely didn't implement the entire site, just a section of it. However, I try to pay attention to all the details, including a loading screen made manually with CSS. The background grid made with threejs, as well as the custom mouse which has "handmade physics". Also if you play around with the site you will see different animations on hover.
 
-<style>
-footer {
-  font-size: 0.8em;
-  text-align: right; 
-  color: #777;
-} 
-</style> 
+### Finally some images that proves that my site is using SSR:
+![image](https://user-images.githubusercontent.com/63200593/235412341-e23e932d-79cf-4975-9f6b-8347b2cdcf60.png)
 
-
-Finally some images that proves that my site is using SSR:
 
