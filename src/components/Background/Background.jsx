@@ -1,6 +1,5 @@
 import React from 'react'
 import { Canvas, useFrame } from '@react-three/fiber'
-import { degToRad } from 'three/src/math/MathUtils'
 import PropTypes from 'prop-types'
 
 import * as backgroundStyles from './background.module.css'
@@ -12,10 +11,13 @@ function MyRotatingGrid() {
   const myMesh = useRef()
   const linesColor = '#313131'
 
+  const myDegToRad = (deg) => deg * (Math.PI / 180)
+
   useFrame(({ clock }) => {
     const a = clock.getElapsedTime()
-    myMesh.current.rotation.x = degToRad(90) + degToRad(5) * Math.sin(a / 2)
-    myMesh.current.position.z = degToRad(30) * degToRad(30) * Math.cos(a / 2)
+    myMesh.current.rotation.x = myDegToRad(90) + myDegToRad(5) * Math.sin(a / 2)
+    myMesh.current.position.z =
+      myDegToRad(30) * myDegToRad(30) * Math.cos(a / 2)
   })
 
   return (

@@ -195,3 +195,43 @@
   font-family: 'Monument Extended', sans-serif;
   font-size: 0.65rem;
 }
+
+.reel {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+}
+
+@media (min-width: 1025px) {
+  .reel {
+    padding-bottom: 4.5rem;
+  }
+}
+
+.social {
+  margin-right: 12rem;
+  margin-bottom: -2.5rem;
+  display: block;
+  list-style: none;
+}
+
+.social_item {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.social_link {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.35s cubic-bezier(0.645, 0.045, 0.355, 1);
+  text-align: -webkit-match-parent;
+  font-family: 'TT Mussels Trl', sans-serif;
+  font-weight: 100;
+  cursor: pointer;
+}
+
+.social_item:hover .social_link {
+  color: #1aff31;
+}

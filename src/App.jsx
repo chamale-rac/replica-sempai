@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-constructed-context-values */
 import React from 'react'
 import './App.css'
 import Cursor from './providers/Cursor/Cursor'
@@ -12,7 +13,6 @@ function App() {
   const [cursor, setCursor] = useState('')
 
   return (
-    // eslint-disable-next-line react/jsx-no-constructed-context-values
     <CursorContext.Provider value={{ cursor, setCursor }}>
       <Background>
         <Header />

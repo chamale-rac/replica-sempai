@@ -2,12 +2,12 @@ import React from 'react'
 import * as heroStyles from './hero.module.css'
 import Cube from './Cube/Cube'
 
-// import { CursorContext } from '../../Contexts'
+import { CursorContext } from '../../Contexts'
 
-// const { useContext } = React
+const { useContext } = React
 
 function Hero() {
-  // const { setCursor } = useContext(CursorContext)
+  const { setCursor } = useContext(CursorContext)
   return (
     <div className={heroStyles.container}>
       <h1 className={heroStyles.title}>
@@ -41,10 +41,91 @@ function Hero() {
             <sup className={heroStyles.phrase_sup}>TM</sup>
           </h4>
         </div>
-        <div className={heroStyles.reel}>
+        <div
+          className={heroStyles.reel}
+          onMouseEnter={() => {
+            setCursor({ type: 'pointer' })
+          }}
+          onMouseLeave={() => {
+            setCursor({ type: null })
+          }}
+        >
           <Cube />
         </div>
-        <div className={heroStyles.social}>Social</div>
+        <div className={heroStyles.social}>
+          <li
+            className={heroStyles.social_item}
+            onMouseEnter={() => {
+              setCursor({ type: 'pointer' })
+            }}
+            onMouseLeave={() => {
+              setCursor({ type: null })
+            }}
+          >
+            <a
+              href="https://www.behance.net/dwl_media"
+              target="_blank"
+              className={heroStyles.social_link}
+              rel="noreferrer"
+            >
+              Behance
+            </a>
+          </li>
+          <li
+            className={heroStyles.social_item}
+            onMouseEnter={() => {
+              setCursor({ type: 'pointer' })
+            }}
+            onMouseLeave={() => {
+              setCursor({ type: null })
+            }}
+          >
+            <a
+              href="https://vimeo.com/dwlmedia"
+              target="_blank"
+              className={heroStyles.social_link}
+              rel="noreferrer"
+            >
+              Vimeo
+            </a>
+          </li>
+          <li
+            className={heroStyles.social_item}
+            onMouseEnter={() => {
+              setCursor({ type: 'pointer' })
+            }}
+            onMouseLeave={() => {
+              setCursor({ type: null })
+            }}
+          >
+            <a
+              href="https://dribbble.com/semp_ai"
+              target="_blank"
+              className={heroStyles.social_link}
+              rel="noreferrer"
+            >
+              Dribbble
+            </a>
+          </li>
+          <li
+            className={heroStyles.social_item}
+            onMouseEnter={() => {
+              setCursor({ type: 'pointer' })
+            }}
+            onMouseLeave={() => {
+              setCursor({ type: null })
+            }}
+          >
+            <a
+              href="https://www.instagram.com/dwl.media/"
+              target="_blank"
+              className={heroStyles.social_link}
+              rel="noreferrer"
+            >
+              Instagram
+            </a>
+          </li>
+        </div>
       </div>
     </div>
   )

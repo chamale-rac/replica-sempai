@@ -73,7 +73,7 @@ function Header() {
               Contact
             </button>
             <div className={headerStyles.detail_container}>
-              <div className={headerStyles.detail}>Let's glitch together</div>
+              <div className={headerStyles.detail}>Lets glitch together</div>
             </div>
           </li>
         </ul>
