@@ -1,4 +1,4 @@
-# Web Platforms Homework
+# replica-sempai - Proyecto 1 
 In this project, where we need to make a copy of the style of some website we admire I choose https://dwl.media , that is a site of a design agency i found intereseting while lookingo for inspiration on https://www.awwwards.com
 
 ## Technologies used
@@ -7,8 +7,8 @@ In this project, where we need to make a copy of the style of some website we ad
 3. 🚂 Express: I use it in the configuration for use SSR.
 
 Other technologies I use where:
-- 💅CSS modules that help to to scope locally by default all class names and animation names.
-- 💾I use render.com, that is a "unified cloud to build and run all your apps and websites with free TLS certificates, a global CDN, DDoS protection, private networks, and auto deploys from Git..."
+- 💅 CSS modules that help to to scope locally by default all class names and animation names.
+- 💾 I use render.com, that is a "unified cloud to build and run all your apps and websites with free TLS certificates, a global CDN, DDoS protection, private networks, and auto deploys from Git..."
 - As guide for implementing the server side render I use the vite -> create-vite-extra -> ssr-react example that vite provides while creating a new proyect.
 
 ## Rubric accomplishment
