@@ -447,6 +447,38 @@
     "/assets/AlloyExtraLight-a58b102b.ttf",
     "/assets/AlloyExtraBold-1b61e212.ttf"
   ],
+  "src/components/Loader/Loader.jsx": [
+    "/assets/AlloyRegular-c5865171.ttf",
+    "/assets/AlloySemiBold-ca1faa2b.ttf",
+    "/assets/AlloyBold-fbf058e5.ttf",
+    "/assets/AlloyLight-7bb63e62.ttf",
+    "/assets/AlloyExtraLight-a58b102b.ttf",
+    "/assets/AlloyExtraBold-1b61e212.ttf"
+  ],
+  "src/components/Loader/loader.module.css?used": [
+    "/assets/AlloyRegular-c5865171.ttf",
+    "/assets/AlloySemiBold-ca1faa2b.ttf",
+    "/assets/AlloyBold-fbf058e5.ttf",
+    "/assets/AlloyLight-7bb63e62.ttf",
+    "/assets/AlloyExtraLight-a58b102b.ttf",
+    "/assets/AlloyExtraBold-1b61e212.ttf"
+  ],
+  "src/components/Stamp/Stamp.jsx": [
+    "/assets/AlloyRegular-c5865171.ttf",
+    "/assets/AlloySemiBold-ca1faa2b.ttf",
+    "/assets/AlloyBold-fbf058e5.ttf",
+    "/assets/AlloyLight-7bb63e62.ttf",
+    "/assets/AlloyExtraLight-a58b102b.ttf",
+    "/assets/AlloyExtraBold-1b61e212.ttf"
+  ],
+  "src/components/Stamp/stamp.module.css?used": [
+    "/assets/AlloyRegular-c5865171.ttf",
+    "/assets/AlloySemiBold-ca1faa2b.ttf",
+    "/assets/AlloyBold-fbf058e5.ttf",
+    "/assets/AlloyLight-7bb63e62.ttf",
+    "/assets/AlloyExtraLight-a58b102b.ttf",
+    "/assets/AlloyExtraBold-1b61e212.ttf"
+  ],
   "src/entry-client.jsx": [
     "/assets/AlloyRegular-c5865171.ttf",
     "/assets/AlloySemiBold-ca1faa2b.ttf",

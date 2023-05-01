@@ -23,7 +23,7 @@ function Stamp() {
           alt="kanji"
           className={stampStyles.kanji}
         />
-        <div className={stampStyles.path}>
+        <div>
           <img
             src="https://dwl.media/assets/icons/path.svg"
             alt="circular letters"

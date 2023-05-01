@@ -15,7 +15,7 @@ function Loader() {
           alt="kanji"
           className={loaderStyles.kanji}
         />
-        <div className={loaderStyles.path}>
+        <div>
           <img
             src="https://dwl.media/assets/icons/path.svg"
             alt="circular letters"

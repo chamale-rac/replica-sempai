@@ -43,9 +43,9 @@ const cursorStyles = /* @__PURE__ */ Object.freeze(/* @__PURE__ */ Object.define
 createContext("light");
 createContext(null);
 const CursorContext = createContext("");
-const { useEffect, useState: useState$1, useContext: useContext$2 } = React;
+const { useEffect, useState: useState$1, useContext: useContext$3 } = React;
 function Cursor() {
-  const { cursor: cursor$1 } = useContext$2(CursorContext);
+  const { cursor: cursor$1 } = useContext$3(CursorContext);
   const [mousePosition, setMousePosition] = useState$1({ x: 0, y: 0 });
   const [prevMousePosition, setPrevMousePosition] = useState$1({ x: 0, y: 0 });
   const onMouseMove = (event) => {
@@ -115,9 +115,9 @@ function Cursor() {
     )
   ] });
 }
-const container$2 = "_container_at4rq_1";
+const container$3 = "_container_p9ybv_1";
 const background_module = {
-  container: container$2
+  container: container$3
 };
 const { useRef } = React;
 function MyRotatingGrid() {
@@ -141,7 +141,7 @@ function MyRotatingGrid() {
 }
 function Background({ children }) {
   return /* @__PURE__ */ jsxs(Fragment, { children: [
-    /* @__PURE__ */ jsx("div", { className: `container ${container$2}`, children: /* @__PURE__ */ jsxs(Canvas, { children: [
+    /* @__PURE__ */ jsx("div", { className: `container ${container$3}`, children: /* @__PURE__ */ jsxs(Canvas, { children: [
       /* @__PURE__ */ jsx("ambientLight", { intensity: 0.1 }),
       /* @__PURE__ */ jsx("directionalLight", { color: "red", position: [0, 0, 5] }),
       /* @__PURE__ */ jsx(MyRotatingGrid, {})
@@ -152,15 +152,15 @@ function Background({ children }) {
 Background.propTypes = {
   children: PropTypes.node.isRequired
 };
-const container$1 = "_container_16twl_1";
-const logo = "_logo_16twl_47";
-const nav = "_nav_16twl_71";
-const detail_container = "_detail_container_16twl_171";
-const nav_li = "_nav_li_16twl_205";
-const button = "_button_16twl_221";
-const detail = "_detail_16twl_171";
+const container$2 = "_container_1skwo_1";
+const logo = "_logo_1skwo_61";
+const nav = "_nav_1skwo_83";
+const detail_container = "_detail_container_1skwo_193";
+const nav_li = "_nav_li_1skwo_227";
+const button = "_button_1skwo_243";
+const detail = "_detail_1skwo_193";
 const header_module = {
-  container: container$1,
+  container: container$2,
   logo,
   nav,
   detail_container,
@@ -168,10 +168,10 @@ const header_module = {
   button,
   detail
 };
-const { useContext: useContext$1 } = React;
+const { useContext: useContext$2 } = React;
 function Header() {
-  const { setCursor } = useContext$1(CursorContext);
-  return /* @__PURE__ */ jsxs("div", { className: container$1, children: [
+  const { setCursor } = useContext$2(CursorContext);
+  return /* @__PURE__ */ jsxs("div", { className: container$2, children: [
     /* @__PURE__ */ jsx(
       "div",
       {
@@ -241,34 +241,34 @@ function Header() {
     ] }) })
   ] });
 }
-const container = "_container_1krr5_1";
-const title = "_title_1krr5_17";
-const title_main = "_title_main_1krr5_53";
-const title_sup = "_title_sup_1krr5_95";
-const tittle_sup = "_tittle_sup_1krr5_109";
-const sphere = "_sphere_1krr5_135";
-const ring = "_ring_1krr5_173";
-const content = "_content_1krr5_315";
-const dwl = "_dwl_1krr5_335";
-const kanji = "_kanji_1krr5_349";
-const phrase = "_phrase_1krr5_367";
-const phrase_sup = "_phrase_sup_1krr5_383";
-const reel = "_reel_1krr5_397";
-const social = "_social_1krr5_425";
-const social_item = "_social_item_1krr5_439";
-const social_link = "_social_link_1krr5_449";
+const container$1 = "_container_1ylxn_1";
+const title = "_title_1ylxn_45";
+const title_main = "_title_main_1ylxn_81";
+const title_sup = "_title_sup_1ylxn_123";
+const tittle_sup = "_tittle_sup_1ylxn_139";
+const sphere = "_sphere_1ylxn_165";
+const ring = "_ring_1ylxn_221";
+const content = "_content_1ylxn_363";
+const dwl = "_dwl_1ylxn_383";
+const kanji$2 = "_kanji_1ylxn_397";
+const phrase = "_phrase_1ylxn_415";
+const phrase_sup = "_phrase_sup_1ylxn_431";
+const reel = "_reel_1ylxn_445";
+const social = "_social_1ylxn_487";
+const social_item = "_social_item_1ylxn_513";
+const social_link = "_social_link_1ylxn_523";
 const hero_module = {
-  container,
+  container: container$1,
   title,
   title_main,
   title_sup,
   tittle_sup,
   sphere,
   ring,
-  "ring-descend": "_ring-descend_1krr5_1",
+  "ring-descend": "_ring-descend_1ylxn_1",
   content,
   dwl,
-  kanji,
+  kanji: kanji$2,
   phrase,
   phrase_sup,
   reel,
@@ -305,10 +305,10 @@ function Cube() {
     /* @__PURE__ */ jsx("p", { className: placeholder, children: "play showreel" })
   ] });
 }
-const { useContext } = React;
+const { useContext: useContext$1 } = React;
 function Hero() {
-  const { setCursor } = useContext(CursorContext);
-  return /* @__PURE__ */ jsxs("div", { className: container, children: [
+  const { setCursor } = useContext$1(CursorContext);
+  return /* @__PURE__ */ jsxs("div", { className: container$1, children: [
     /* @__PURE__ */ jsxs("h1", { className: title, children: [
       /* @__PURE__ */ jsx("span", { className: title_main, children: "D.W.L" }),
       /* @__PURE__ */ jsx("sup", { className: title_sup, children: "TM" })
@@ -331,7 +331,7 @@ function Hero() {
     ] }),
     /* @__PURE__ */ jsxs("div", { className: content, children: [
       /* @__PURE__ */ jsxs("div", { className: dwl, children: [
-        /* @__PURE__ */ jsx("h4", { className: kanji, children: "愛" }),
+        /* @__PURE__ */ jsx("h4", { className: kanji$2, children: "愛" }),
         /* @__PURE__ */ jsxs("h4", { className: phrase, children: [
           /* @__PURE__ */ jsxs("span", { children: [
             "DESIGN ",
@@ -447,13 +447,106 @@ function Hero() {
     ] })
   ] });
 }
+const stamp = "_stamp_rta1t_1";
+const wrapper = "_wrapper_rta1t_31";
+const kanji$1 = "_kanji_rta1t_41";
+const path_inner$1 = "_path_inner_rta1t_57";
+const stamp_module = {
+  stamp,
+  wrapper,
+  kanji: kanji$1,
+  path_inner: path_inner$1
+};
+const { useContext } = React;
+function Stamp() {
+  const { setCursor } = useContext(CursorContext);
+  return /* @__PURE__ */ jsx(
+    "div",
+    {
+      className: stamp,
+      onMouseEnter: () => {
+        setCursor({ type: "pointer" });
+      },
+      onMouseLeave: () => {
+        setCursor({ type: null });
+      },
+      children: /* @__PURE__ */ jsxs("div", { className: wrapper, children: [
+        /* @__PURE__ */ jsx(
+          "img",
+          {
+            src: "https://dwl.media/assets/icons/kanji.svg",
+            alt: "kanji",
+            className: kanji$1
+          }
+        ),
+        /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx(
+          "img",
+          {
+            src: "https://dwl.media/assets/icons/path.svg",
+            alt: "circular letters",
+            className: path_inner$1
+          }
+        ) })
+      ] })
+    }
+  );
+}
+const container = "_container_1gmkk_1";
+const icon_wrapper = "_icon_wrapper_1gmkk_25";
+const kanji = "_kanji_1gmkk_37";
+const path_inner = "_path_inner_1gmkk_53";
+const rotation = "_rotation_1gmkk_1";
+const curtain_wrapper = "_curtain_wrapper_1gmkk_81";
+const curtain_left = "_curtain_left_1gmkk_105";
+const curtain_right = "_curtain_right_1gmkk_135";
+const vertical_white_line = "_vertical_white_line_1gmkk_201";
+const loader_module = {
+  container,
+  icon_wrapper,
+  kanji,
+  path_inner,
+  rotation,
+  curtain_wrapper,
+  curtain_left,
+  curtain_right,
+  vertical_white_line
+};
+function Loader() {
+  return /* @__PURE__ */ jsxs("div", { className: container, children: [
+    /* @__PURE__ */ jsxs("div", { className: curtain_wrapper, children: [
+      /* @__PURE__ */ jsx("div", { className: curtain_left }),
+      /* @__PURE__ */ jsx("div", { className: curtain_right })
+    ] }),
+    /* @__PURE__ */ jsx("div", { className: vertical_white_line }),
+    /* @__PURE__ */ jsxs("div", { className: icon_wrapper, children: [
+      /* @__PURE__ */ jsx(
+        "img",
+        {
+          src: "https://dwl.media/assets/icons/kanji.svg",
+          alt: "kanji",
+          className: kanji
+        }
+      ),
+      /* @__PURE__ */ jsx("div", { children: /* @__PURE__ */ jsx(
+        "img",
+        {
+          src: "https://dwl.media/assets/icons/path.svg",
+          alt: "circular letters",
+          className: path_inner
+        }
+      ) })
+    ] })
+  ] });
+}
 const { useState } = React;
 function App() {
   const [cursor2, setCursor] = useState("");
   return /* @__PURE__ */ jsx(CursorContext.Provider, { value: { cursor: cursor2, setCursor }, children: /* @__PURE__ */ jsxs(Background, { children: [
+    /* @__PURE__ */ jsx(Loader, {}),
     /* @__PURE__ */ jsx(Header, {}),
     /* @__PURE__ */ jsx(Hero, {}),
-    /* @__PURE__ */ jsx(Cursor, {})
+    /* @__PURE__ */ jsx(Cursor, {}),
+    /* @__PURE__ */ jsx(Stamp, {})
   ] }) });
 }
 function render() {
