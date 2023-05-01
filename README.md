@@ -21,7 +21,7 @@ Other technologies I use where:
 | Implementar ESLint                                          | 15pts      |
 | Implementar CSS modules                                     | 5pts       |
 | Implementar SSR sin librerías adicionales                   | 50pts      |
-|                                          **Total aparente** | **135pts** |
+|                                                  **Total ** | **135pts** |
 
 ## Images 
 ![image](https://user-images.githubusercontent.com/63200593/235411655-f91ac887-fbdb-440e-b429-98338efac5af.png)
