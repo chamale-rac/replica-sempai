@@ -30,4 +30,4 @@ Other technologies I use where:
 ### Finally some images that proves that my site is using SSR:
 ![image](https://user-images.githubusercontent.com/63200593/235412341-e23e932d-79cf-4975-9f6b-8347b2cdcf60.png)
 
-
+> LOL I forgot to change the site favicon and name 🙁 
