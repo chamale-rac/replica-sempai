@@ -1,0 +1,147 @@
+.container {
+  pointer-events: none;
+  position: absolute;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.icon_wrapper {
+  opacity: 0;
+  z-index: 999;
+  display: relative;
+}
+
+.kanji {
+  max-width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.path_inner {
+  transform: rotate(0deg);
+  animation: rotation 16s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+.curtain_wrapper {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  z-index: 998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.curtain_wrapper > .curtain_left {
+  position: absolute;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  z-index: 998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: curtain_left 1.5s cubic-bezier(0.33, -0.07, 0.2, 0.51);
+  animation-fill-mode: forwards;
+  animation-delay: 4.2s;
+}
+
+.curtain_wrapper > .curtain_right {
+  right: 0;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: black;
+  z-index: 998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: curtain_right 1.5s cubic-bezier(0.33, -0.07, 0.2, 0.51);
+  animation-fill-mode: forwards;
+  animation-delay: 4.2s;
+}
+
+@keyframes curtain_left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes curtain_right {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+.vertical_white_line {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 0%;
+  background-color: white;
+  z-index: 999;
+  animation: vertical_white_line 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  animation-fill-mode: forwards;
+  animation-delay: 3.5s;
+}
+
+@keyframes vertical_white_line {
+  0% {
+    height: 0%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    height: 100%;
+    opacity: 0;
+  }
+}
+
+.icon_wrapper {
+  pointer-events: none;
+  animation: icon_wrapper 3s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes icon_wrapper {
+  0% {
+    opacity: 0;
+  }
+  58% {
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

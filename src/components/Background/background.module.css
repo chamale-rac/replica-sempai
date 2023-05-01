@@ -1,5 +1,15 @@
 .container {
-    opacity: 0.4;
-    position: absolute;
-    color: white
+  opacity: 0.4;
+  position: absolute;
+  color: white;
+}
+
+.container {
+  display: none;
+}
+
+@media (min-width: 850px) {
+  .container {
+    display: block;
+  }
 }
