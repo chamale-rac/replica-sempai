@@ -1,5 +1,5 @@
 # replica-sempai - project 1 - web tech
-In this project, where we need to make a copy of the style of some website we admire I choose https://dwl.media , that is a site of a design agency i found intereseting while lookingo for inspiration on https://www.awwwards.com
+In this project, where we need to make a copy of the style of some website we admire I choose https://dwl.media , that is a site of a design agency I found intereseting while lookingo for inspiration on https://www.awwwards.com
 
 ## Technologies used
 1. 👾 Threejs: I use to include some 3d elements in the site. But in order to increase my productivity I use @react-three/fiber that is a React renderer for three.js.
